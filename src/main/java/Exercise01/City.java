@@ -1,64 +1,23 @@
 package Exercise01;
 
-public class City {
-    private String name;
-    private int code;
-    private String codename;
-    private String division_type;
-    private int phone_code;
+public class City extends Ward {
+
     private District[] districts;
 
-    public City() {
-
-    }
-
-    public City(String name, int code, String codename, String division_type, int phone_code, District[] districts) {
-        this.name = name;
-        this.code = code;
-        this.codename = codename;
-        this.division_type = division_type;
-        this.phone_code = phone_code;
+    public City(District[] districts) {
         this.districts = districts;
     }
 
-
-    public String getNames() {
-        return name;
+    public City(String name, int code, String codename, String division_type, int phone_code, District[] districts) {
+        super(name, code, codename, division_type, phone_code);
+        this.districts = districts;
     }
 
-    public void setNames(String name) {
-        this.name = name;
+    public District[] getDistricts() {
+        return districts;
     }
 
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getCodename() {
-        return codename;
-    }
-
-    public void setCodename(String codename) {
-        this.codename = codename;
-    }
-
-    public String getDivision_type() {
-        return division_type;
-    }
-
-    public void setDivision_type(String division_type) {
-        this.division_type = division_type;
-    }
-
-    public int getPhone_code() {
-        return phone_code;
-    }
-
-    public void setPhone_code(int phone_code) {
-        this.phone_code = phone_code;
+    public void setDistricts(District[] districts) {
+        this.districts = districts;
     }
 }

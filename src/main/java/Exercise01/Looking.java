@@ -4,13 +4,13 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
-import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
 
 public class Looking {
+
     public static void main(String[] args) throws IOException {
         readInformation();
         Scanner sc = new Scanner(System.in);

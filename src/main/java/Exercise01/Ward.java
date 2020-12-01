@@ -5,17 +5,17 @@ public class Ward {
     private int code;
     private String codename;
     private String division_type;
-    private String short_codename;
+    private int phone_code;
 
     public Ward() {
     }
 
-    public Ward(String name, int code, String codename, String division_type, String short_codename) {
+    public Ward(String name, int code, String codename, String division_type, int phone_code) {
         this.name = name;
         this.code = code;
         this.codename = codename;
         this.division_type = division_type;
-        this.short_codename = short_codename;
+        this.phone_code = phone_code;
     }
 
     public String getName() {
@@ -50,11 +50,11 @@ public class Ward {
         this.division_type = division_type;
     }
 
-    public String getShort_codename() {
-        return short_codename;
+    public int getPhone_code() {
+        return phone_code;
     }
 
-    public void setShort_codename(String short_codename) {
-        this.short_codename = short_codename;
+    public void setPhone_code(int phone_code) {
+        this.phone_code = phone_code;
     }
 }
