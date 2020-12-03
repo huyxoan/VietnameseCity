@@ -1,10 +1,13 @@
 package Exercise01;
 
+import java.util.Arrays;
+
 public class City extends Ward {
 
     private District[] districts;
 
     public City(District[] districts) {
+
         this.districts = districts;
     }
 
@@ -19,5 +22,13 @@ public class City extends Ward {
 
     public void setDistricts(District[] districts) {
         this.districts = districts;
+    }
+
+    @Override
+    public String toString() {
+        return "Thanh pho {" +
+                super.toString() +
+                " cac quan =" + Arrays.toString(districts) +
+                '}';
     }
 }

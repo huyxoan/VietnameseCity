@@ -10,6 +10,17 @@ public class Ward {
     public Ward() {
     }
 
+    @Override
+    public String toString() {
+        return "Xa{" +
+                "Ten='" + name + '\'' +
+                ", code=" + code +
+                ", codename='" + codename + '\'' +
+                ", kieu='" + division_type + '\'' +
+                ", dien thoai=" + phone_code +
+                '}';
+    }
+
     public Ward(String name, int code, String codename, String division_type, int phone_code) {
         this.name = name;
         this.code = code;
